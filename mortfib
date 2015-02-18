@@ -1,0 +1,21 @@
+def fib(x):
+    if x == 0:
+        return 0
+    elif x == 1:
+        return 1
+    elif x == 2:
+        return 1
+    else:
+        tmp1 = 1
+        tmp2 = 1
+        z = 0
+        for i in range(1,x -1):
+            z = tmp1 + tmp2
+            tmp1 = tmp2
+            tmp2 = z
+    return z
+
+def mortfib(n,m):
+    alive = 0
+    return fib(m)*n - fib(m-n)*(n)
+print mortfib(6,3)
