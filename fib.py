@@ -6,4 +6,4 @@ def fib(n, k):
   else:
     return k*fib(n-2, k) + fib(n-1, k)
 
-print fib(6,1)
+print fib(22,1)
